@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>My AR Models</title>
-</head>
-<body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>ลองเปิดไฟล์ .glb จากลิงก์โดยตรง</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My AR Models</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { font-family: sans-serif; text-align: center; }
+      model-viewer { width: 100%; height: 500px; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>โมเดล AR ที่อัปโหลดไว้</h1>
+
+    <!-- ตัวอย่างโมเดล (เปลี่ยนชื่อไฟล์ให้ตรงกับที่คุณอัปโหลด) -->
+    <model-viewer src="1.glb" alt="Model 1" auto-rotate camera-controls ar ar-modes="scene-viewer webxr quick-look"></model-viewer>
+    
+    <model-viewer src="2.glb" alt="Model 2" auto-rotate camera-controls ar ar-modes="scene-viewer webxr quick-look"></model-viewer>
+
+    <model-viewer src="3.glb" alt="Model 3" auto-rotate camera-controls ar ar-modes="scene-viewer webxr quick-look"></model-viewer>
+  </body>
 </html>
